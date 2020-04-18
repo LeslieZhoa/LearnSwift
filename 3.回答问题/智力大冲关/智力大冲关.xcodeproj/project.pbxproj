@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		71227E68244ACE3D00F10276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71227E67244ACE3D00F10276 /* AppDelegate.swift */; };
 		71227E6A244ACE3D00F10276 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71227E69244ACE3D00F10276 /* SceneDelegate.swift */; };
-		71227E6C244ACE3D00F10276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71227E6B244ACE3D00F10276 /* ViewController.swift */; };
 		71227E6F244ACE3D00F10276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71227E6D244ACE3D00F10276 /* Main.storyboard */; };
 		71227E71244ACE4000F10276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71227E70244ACE4000F10276 /* Assets.xcassets */; };
 		71227E74244ACE4000F10276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71227E72244ACE4000F10276 /* LaunchScreen.storyboard */; };
+		71227E80244ACEFC00F10276 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71227E7F244ACEFC00F10276 /* Questions.swift */; };
+		71227E84244AD7A000F10276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71227E83244AD7A000F10276 /* ViewController.swift */; };
+		71227E86244AF2D500F10276 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71227E85244AF2D500F10276 /* ProgressHUD.bundle */; };
+		71227E8A244AF2E400F10276 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 71227E89244AF2E400F10276 /* ProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71227E64244ACE3D00F10276 /* 智力大冲关.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "智力大冲关.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71227E67244ACE3D00F10276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71227E69244ACE3D00F10276 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		71227E6B244ACE3D00F10276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		71227E6E244ACE3D00F10276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71227E70244ACE4000F10276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71227E73244ACE4000F10276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71227E75244ACE4000F10276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71227E7F244ACEFC00F10276 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		71227E83244AD7A000F10276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71227E85244AF2D500F10276 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		71227E87244AF2E300F10276 /* 智力大冲关-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "智力大冲关-Bridging-Header.h"; sourceTree = "<group>"; };
+		71227E88244AF2E400F10276 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		71227E89244AF2E400F10276 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,52 @@
 		71227E66244ACE3D00F10276 /* 智力大冲关 */ = {
 			isa = PBXGroup;
 			children = (
-				71227E67244ACE3D00F10276 /* AppDelegate.swift */,
+				71227E7B244ACE8100F10276 /* Controler */,
+				71227E7C244ACECA00F10276 /* Model */,
+				71227E7D244ACED700F10276 /* View */,
 				71227E69244ACE3D00F10276 /* SceneDelegate.swift */,
-				71227E6B244ACE3D00F10276 /* ViewController.swift */,
-				71227E6D244ACE3D00F10276 /* Main.storyboard */,
-				71227E70244ACE4000F10276 /* Assets.xcassets */,
 				71227E72244ACE4000F10276 /* LaunchScreen.storyboard */,
 				71227E75244ACE4000F10276 /* Info.plist */,
+				71227E7E244ACEE000F10276 /* Supporting Files */,
 			);
 			path = "智力大冲关";
+			sourceTree = "<group>";
+		};
+		71227E7B244ACE8100F10276 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				71227E67244ACE3D00F10276 /* AppDelegate.swift */,
+				71227E83244AD7A000F10276 /* ViewController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		71227E7C244ACECA00F10276 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71227E7F244ACEFC00F10276 /* Questions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71227E7D244ACED700F10276 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71227E6D244ACE3D00F10276 /* Main.storyboard */,
+				71227E70244ACE4000F10276 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71227E7E244ACEE000F10276 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71227E88244AF2E400F10276 /* ProgressHUD.h */,
+				71227E89244AF2E400F10276 /* ProgressHUD.m */,
+				71227E85244AF2D500F10276 /* ProgressHUD.bundle */,
+				71227E87244AF2E300F10276 /* 智力大冲关-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +144,7 @@
 				TargetAttributes = {
 					71227E63244ACE3D00F10276 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -125,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71227E86244AF2D500F10276 /* ProgressHUD.bundle in Resources */,
 				71227E74244ACE4000F10276 /* LaunchScreen.storyboard in Resources */,
 				71227E71244ACE4000F10276 /* Assets.xcassets in Resources */,
 				71227E6F244ACE3D00F10276 /* Main.storyboard in Resources */,
@@ -138,8 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71227E6C244ACE3D00F10276 /* ViewController.swift in Sources */,
+				71227E80244ACEFC00F10276 /* Questions.swift in Sources */,
 				71227E68244ACE3D00F10276 /* AppDelegate.swift in Sources */,
+				71227E8A244AF2E400F10276 /* ProgressHUD.m in Sources */,
+				71227E84244AD7A000F10276 /* ViewController.swift in Sources */,
 				71227E6A244ACE3D00F10276 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,15 +333,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MJ3G9NZQ2;
 				INFOPLIST_FILE = "智力大冲关/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leslie.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "智力大冲关/Supporting Files/智力大冲关-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +355,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MJ3G9NZQ2;
 				INFOPLIST_FILE = "智力大冲关/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leslie.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "智力大冲关/Supporting Files/智力大冲关-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
