@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="天气酱" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="VM6-5C-pnt">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDl-RA-CwN">
+                                <rect key="frame" x="590" y="85.5" width="119" height="73"/>
+                                <state key="normal" image="switch"/>
+                                <connections>
+                                    <segue destination="TWH-bq-3E1" kind="presentation" identifier="selectCity" id="5tB-cU-6Mf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6k1-L3-W4e">
+                                <rect key="frame" x="429" y="256" width="280" height="162.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="100"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在获取地理位置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOc-Kh-SDh">
+                                <rect key="frame" x="51" y="831.5" width="538" height="162.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="48V-bU-65V">
+                                <rect key="frame" x="161.5" y="483.5" width="445" height="233.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6k1-L3-W4e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" multiplier="12:13" id="83i-uA-B9n"/>
+                            <constraint firstItem="6k1-L3-W4e" firstAttribute="height" secondItem="VM6-5C-pnt" secondAttribute="height" multiplier="0.158482" id="9cr-gH-ZXF"/>
+                            <constraint firstItem="ZOc-Kh-SDh" firstAttribute="width" secondItem="VM6-5C-pnt" secondAttribute="width" multiplier="0.7" id="BhJ-us-KMJ"/>
+                            <constraint firstAttribute="bottom" secondItem="VM6-5C-pnt" secondAttribute="bottom" id="D4W-Pm-ejs"/>
+                            <constraint firstItem="48V-bU-65V" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DWC-QM-1R2"/>
+                            <constraint firstItem="6k1-L3-W4e" firstAttribute="width" secondItem="VM6-5C-pnt" secondAttribute="width" multiplier="0.364734" id="K6b-Rh-RgM"/>
+                            <constraint firstItem="VM6-5C-pnt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KIO-Hq-u03"/>
+                            <constraint firstItem="ZOc-Kh-SDh" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="33:34" id="PCQ-1V-lA4"/>
+                            <constraint firstItem="uDl-RA-CwN" firstAttribute="height" secondItem="VM6-5C-pnt" secondAttribute="height" multiplier="0.0714286" id="QQl-EW-Wi0"/>
+                            <constraint firstItem="VM6-5C-pnt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RGI-Mu-G3H"/>
+                            <constraint firstItem="ZOc-Kh-SDh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="1:15" symbolic="YES" id="WXN-Tc-0eT"/>
+                            <constraint firstItem="6k1-L3-W4e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="Wku-eP-XYc"/>
+                            <constraint firstItem="48V-bU-65V" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="7:10" id="XB0-ct-ohg"/>
+                            <constraint firstItem="ZOc-Kh-SDh" firstAttribute="height" secondItem="VM6-5C-pnt" secondAttribute="height" multiplier="0.158482" id="Y6Q-Tf-jbv"/>
+                            <constraint firstItem="uDl-RA-CwN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="12:13" id="g4z-tL-flM"/>
+                            <constraint firstItem="6k1-L3-W4e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="1:4" id="h9f-A0-aKE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZOc-Kh-SDh" secondAttribute="trailing" symbolic="YES" id="hMq-Hs-o0S"/>
+                            <constraint firstItem="VM6-5C-pnt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hU2-bh-s6t"/>
+                            <constraint firstItem="uDl-RA-CwN" firstAttribute="width" secondItem="VM6-5C-pnt" secondAttribute="width" multiplier="0.154589" id="hc3-OC-Kf5"/>
+                            <constraint firstItem="uDl-RA-CwN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="1:12" id="l4z-jF-lZq"/>
+                            <constraint firstItem="48V-bU-65V" firstAttribute="width" secondItem="VM6-5C-pnt" secondAttribute="width" multiplier="0.57971" id="plW-sR-2d8"/>
+                            <constraint firstItem="48V-bU-65V" firstAttribute="height" secondItem="VM6-5C-pnt" secondAttribute="height" multiplier="0.227679" id="upp-ba-9tI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="ZOc-Kh-SDh" id="k8d-sg-AVs"/>
+                        <outlet property="imageView" destination="48V-bU-65V" id="7oa-Ja-sYj"/>
+                        <outlet property="tempLabel" destination="6k1-L3-W4e" id="V65-dq-ube"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120.28985507246378" y="83.035714285714278"/>
+        </scene>
+        <!--Select City Controller-->
+        <scene sceneID="fvB-4x-hUe">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="TWH-bq-3E1" customClass="SelectCityController" customModule="天气酱" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hjf-Df-aTN">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cityBackground" translatesAutoresizingMaskIntoConstraints="NO" id="dIf-U1-LgS">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2P-pk-GrV">
+                                <rect key="frame" x="38.5" y="51" width="152" height="69"/>
+                                <state key="normal" image="left">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="TWH-bq-3E1" eventType="touchUpInside" id="WAW-oq-19Z"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iZB-IB-LZD">
+                                <rect key="frame" x="192" y="205" width="384" height="150.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dM7-e4-TKP">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="86.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdo-hv-9Mh">
+                                        <rect key="frame" x="0.0" y="102.5" width="384" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="查询天气">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeCity:" destination="TWH-bq-3E1" eventType="touchUpInside" id="6iI-Hk-D4A"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlj-8Z-EOT">
+                                <rect key="frame" x="191.5" y="102.5" width="385" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="当前城市：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lX-sy-Nex">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="x x x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqi-G5-ZLX">
+                                        <rect key="frame" x="334" y="0.0" width="51" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="b2P-pk-GrV" firstAttribute="top" secondItem="hjf-Df-aTN" secondAttribute="bottom" multiplier="1:20" id="1gv-LG-FYv"/>
+                            <constraint firstItem="iZB-IB-LZD" firstAttribute="height" secondItem="dIf-U1-LgS" secondAttribute="height" multiplier="0.146927" id="2Cn-Xa-m0y"/>
+                            <constraint firstAttribute="trailing" secondItem="dIf-U1-LgS" secondAttribute="trailing" id="3E1-qs-oBz"/>
+                            <constraint firstItem="b2P-pk-GrV" firstAttribute="height" secondItem="dIf-U1-LgS" secondAttribute="height" multiplier="0.0669643" id="6kt-n5-4o2"/>
+                            <constraint firstItem="zlj-8Z-EOT" firstAttribute="centerX" secondItem="hjf-Df-aTN" secondAttribute="centerX" id="8wL-LB-hXq"/>
+                            <constraint firstAttribute="leading" secondItem="dIf-U1-LgS" secondAttribute="leading" id="CgI-gc-CcY"/>
+                            <constraint firstItem="b2P-pk-GrV" firstAttribute="width" secondItem="dIf-U1-LgS" secondAttribute="width" multiplier="0.198068" id="E20-Ey-b7V"/>
+                            <constraint firstItem="7lX-sy-Nex" firstAttribute="height" secondItem="dIf-U1-LgS" secondAttribute="height" multiplier="0.0487256" id="EsN-6f-M9W"/>
+                            <constraint firstItem="dIf-U1-LgS" firstAttribute="top" secondItem="hjf-Df-aTN" secondAttribute="top" id="F6w-Kg-j8A"/>
+                            <constraint firstItem="b2P-pk-GrV" firstAttribute="leading" secondItem="hjf-Df-aTN" secondAttribute="trailing" multiplier="1:20" id="KXC-kU-YnC"/>
+                            <constraint firstItem="iZB-IB-LZD" firstAttribute="width" secondItem="dIf-U1-LgS" secondAttribute="width" multiplier="0.5" id="VfP-Ph-Pdh"/>
+                            <constraint firstItem="iZB-IB-LZD" firstAttribute="top" secondItem="hjf-Df-aTN" secondAttribute="bottom" multiplier="1:5" id="XSk-rJ-ECH"/>
+                            <constraint firstItem="iZB-IB-LZD" firstAttribute="centerX" secondItem="hjf-Df-aTN" secondAttribute="centerX" id="jka-Z5-5uo"/>
+                            <constraint firstItem="dIf-U1-LgS" firstAttribute="bottom" secondItem="hjf-Df-aTN" secondAttribute="bottom" id="od4-6h-arx"/>
+                            <constraint firstItem="zlj-8Z-EOT" firstAttribute="width" secondItem="dIf-U1-LgS" secondAttribute="width" multiplier="0.501333" id="sqW-LX-ATM"/>
+                            <constraint firstItem="zlj-8Z-EOT" firstAttribute="top" secondItem="GK4-0b-a3W" secondAttribute="bottom" multiplier="1:10" id="zuL-81-hPj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GK4-0b-a3W"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityInput" destination="dM7-e4-TKP" id="eWI-k8-bfh"/>
+                        <outlet property="currentCityLabel" destination="lqi-G5-ZLX" id="VWK-ha-gbl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mnk-uN-CzM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792.75362318840587" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="500" height="755"/>
+        <image name="cityBackground" width="600" height="399.5"/>
+        <image name="left" width="32" height="32"/>
+        <image name="switch" width="64" height="64"/>
+    </resources>
+</document>

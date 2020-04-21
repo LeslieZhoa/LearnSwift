@@ -1,0 +1,15 @@
+# project '天气酱.xcodeproj'
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+# source 'https://github.com/CocoaPods/Specs.git'
+target '天气酱' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+  use_modular_headers!
+
+  # Pods for 天气酱
+  pod 'SVProgressHUD'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+
+end
