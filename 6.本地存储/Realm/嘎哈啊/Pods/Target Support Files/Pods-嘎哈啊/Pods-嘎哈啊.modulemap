@@ -1,0 +1,6 @@
+module Pods____ {
+  umbrella header "Pods-嘎哈啊-umbrella.h"
+
+  export *
+  module * { export * }
+}
